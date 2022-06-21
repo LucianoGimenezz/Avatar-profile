@@ -1,3 +1,88 @@
+:root {
+  --ligth-color-bg: #FBF2E6;
+  --ligth-color-div1: #D8FFF1;
+  --ligth-color-div2: #E4E4E4
+}
+
+*{
+  box-sizing:border-box;
+  padding: 0;
+  margin:0;
+}
+
+html {
+  font-size:62.5%;
+}
+
 body {
-    background-color: red;
+    background-color: var(--ligth-color-bg);
+}
+main {
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.card {
+ width:100%;
+ max-width:520px;
+ display:flex;
+ flex-direction:column;
+}
+
+.card__image {
+  position:relative;
+  width:100%;
+  height: 150px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color:var(--ligth-color-div1);
+}
+
+.card__image span {
+  position:absolute;
+  top:calc(50%);
+  width:140px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+.card__image span img {
+  position:relative;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+
+.card__info {
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  align-items:center;
+  width:100%;
+  height: 180px;
+  background-color:var(--ligth-color-div2);
+}
+
+.card__info h3 {
+  font-size:1.6rem;
+  margin-top:5px;
+}
+
+.icons-container {
+  width:50%;
+  margin-bottom: 8px;
+  display:flex;
+  justify-content:space-around;
+}
+
+.rule {
+  margin: 4px 0 6px 0;
+  opacity:0.3;
+  border: 1px solid #000;
+  width: 40%
 }
