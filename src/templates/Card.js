@@ -14,19 +14,19 @@ const Card = () => {
             <h3 class="card__title">Front-end</h3>
             <div class="rule"></div>
             <div class="icons-container">
-                <a>
+                <a target="_blank" href="https://twitter.com/LucianoG211">
                   <img 
                    src="assets/icons/twitter1.png"
                    alt="Logo de twitter"
                    />
                 </a>
-                <a>
+                <a target="_blank" href="https://github.com/LucianoGimenezz">
                  <img 
                     src="${gitHub}" 
                     alt="Logo de github"
                     /> 
                 </a>
-                <a>
+                <a  target="_blank" href="https://www.linkedin.com/in/luciano-martin-gimenez-52986a1ba/">
                   <img
                      src="assets/icons/linkedin1.png"
                      alt="Logo de linkedin"
