@@ -1,5 +1,5 @@
-import gitHub from '../assets/icons/github1.png';
-import profile from '../assets/images/perfilPng.png';
+import gitHub from '@icons/github1.png';
+import profile from '@images/perfilPng.png';
 
 const Card = () => {
     const view = `

@@ -3,6 +3,16 @@
   --ligth-color-div1: #D8FFF1;
   --ligth-color-div2: #E4E4E4
 }
+@font-face {
+  font-family: 'Anek';
+  src: 
+    url('../assets//fonts/anek-malayalam-v2-latin-regular.woff2')
+    format('woff2'),
+    url('../assets/fonts/anek-malayalam-v2-latin-regular.woff')
+    format('woff') ;
+  font-weight: 400;
+  font-style: normal;
+}
 
 *{
   box-sizing:border-box;
@@ -15,6 +25,7 @@ html {
 }
 
 body {
+    font-family: 'Anek';
     background-color: var(--ligth-color-bg);
 }
 main {
