@@ -1,7 +1,10 @@
 :root {
   --ligth-color-bg: #FBF2E6;
   --ligth-color-div1: #D8FFF1;
-  --ligth-color-div2: #E4E4E4
+  --ligth-color-div2: #E4E4E4;
+  --dark-color-bg: #202540;
+  --dark-color-div1:#2A3154;
+  --dark-color-div2:#95C6FF;
 }
 @font-face {
   font-family: 'Anek';
@@ -27,21 +30,31 @@ html {
 body {
     font-family: 'Anek';
     background-color: var(--ligth-color-bg);
+    transition:  background-color .3s;
 }
 main {
   display: flex;  
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   width: 100%;
   height: 100vh;
 }
 
+
+
 .card {
+ margin-top: 4.4rem;
  width:100%;
  max-width:520px;
  display:flex;
  flex-direction:column;
 }
+
+.dark-mode {
+  background-color: var(--dark-color-bg);
+  transition:  background-color .3s;
+}
+
 
 .card__image {
   position:relative;
@@ -51,6 +64,43 @@ main {
   justify-content:center;
   align-items:center;
   background-color:var(--ligth-color-div1);
+  transition:  background-color .3s;
+}
+
+
+.card__image--dark {
+  background-color: var(--dark-color-div1);
+  transition:  background-color .3s;
+}
+
+
+.change_mode {
+  position: absolute;
+  right: 20px;
+  top: 24px;
+  border-radius: 20px;
+  width: 50px;
+  height: 30px;
+  align-self: flex-start;
+  justify-self: flex-end;
+  background-color: var(--ligth-color-div2);
+  transition:  background-color .3s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.change_mode--dark {
+  background-color: var(--dark-color-div2);
+  transition:  background-color .3s;
+}
+
+.change_mode:hover {
+  background-color: #d1c7c7;
+}
+
+.change_mode--dark:hover {
+  background-color: #7ba2cf;
 }
 
 .card__image span {
@@ -77,6 +127,17 @@ main {
   width:100%;
   height: 180px;
   background-color:var(--ligth-color-div2);
+  transition:  background-color .3s;
+
+}
+
+.card__info--dark {
+  background-color: var(--dark-color-div2);
+  transition:  background-color .3s;
+}
+
+.card__info p {
+  font-size: 1.4rem;
 }
 
 .card__info h3 {
@@ -89,6 +150,15 @@ main {
   margin-bottom: 8px;
   display:flex;
   justify-content:space-around;
+}
+
+.icons-container a img{
+  transform: scale(1);
+  transition:  transform .3s;
+}
+
+.icons-container a img:hover{
+  transform: scale(1.1) rotate(20deg);
 }
 
 .rule {
