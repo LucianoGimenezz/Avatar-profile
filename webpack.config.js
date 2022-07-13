@@ -5,11 +5,11 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const DotEnv = require('dotenv-webpack');
-const { CleanWebpackPlugin }  = require('clean-webpack-plugin');
 
 module.exports = {
   entry: './src/index',
   output: {
+    clean:true,
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[contenthash].js'
   },
@@ -75,7 +75,6 @@ module.exports = {
       ]
     }),
     new DotEnv(),
-    new CleanWebpackPlugin()
   ],
   optimization: {
     minimize:true,

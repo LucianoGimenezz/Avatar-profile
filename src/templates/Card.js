@@ -16,7 +16,7 @@ const Card = () => {
         </div>
         <div class="card__info">
             <p class="card__about">Hi, My name is Luciano Gimenez</p>
-            <h3 class="card__title">Front-end</h3>
+            <h3 class="card__title">FRONT-END</h3>
             <div class="rule"></div>
             <div class="icons-container">
                 <a target="_blank" href="https://twitter.com/LucianoG211">
